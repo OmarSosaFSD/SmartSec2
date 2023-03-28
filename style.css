@@ -1,0 +1,230 @@
+:root{
+    --ppal: #d4cdcd;
+    --sec: #4982ec; 
+}
+*{
+    color:var(--ppal);
+    box-sizing: border-box;
+}
+h1{font-size: 2em;}
+h2{font-size: 2,5em;
+    text-align: center;
+}
+h3{font-size: 1,5em;}
+p{font-size: 1,25;}
+ul{
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    padding: 0%;
+}
+a{
+    text-shadow: 8px 0px 8px #4982ec, -8px 0px 8px #4982ec;    
+    text-decoration-line: none;
+    font-weight: bold;
+}
+button{
+    font-size: 1,5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    color: #f3f5f6;
+    box-shadow: 2px 2px 10px #706b6b;
+    background-color: #1a3567;
+}
+button:hover{
+    background-color: #4982ec;
+}
+body{
+    background-image: url("./images/4k-lite-cctv-cameras.webp");
+    height: 400vh;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: 0;
+    padding: 0%;
+}
+.logo > img{
+    height: 150px;
+    margin: 0;
+}
+
+.header{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.img-container{
+    text-align: center;
+    padding: 10px 15px;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(38, 40, 40);
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
+
+    
+}
+.frase{
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+}
+.folleto{
+    border-color: 2px solid #706b6b;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(34, 38, 67);
+    flex-direction: column;
+}
+footer{
+    text-align: center;
+}
+footer > p{
+    background-color: #f1f1ea33;
+}
+
+
+
+
+
+
+@media (min-width: 800px){
+    h1{
+        font-size: 3em;
+        font-weight: bold;
+    }
+    h2{font-size: 2.5em;}
+    h3{font-size: 2em;}
+    p{font-size: 1.5em;}
+    a{
+        text-decoration: none;
+        text-shadow: none;
+        padding-right: 5px;
+    }
+    a:hover{
+        text-shadow: 2px 5px 10px var(--ppal);
+    }
+    .hero{
+        display: flexbox;
+        height: 100vh;
+    }
+    .logo{
+        width: 100vw;
+        height: 150px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+    }
+    .logo > nav{
+        width:auto;
+        height: auto;
+        display: inline;
+        float: inline-end;
+        font-size: 1.8em;
+        padding-right: 5px;
+    }
+
+    .frase{
+        display: block;
+        width: 100vw;
+        height: 50vh;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .frase > button{
+        font-size: 2.5em;
+        margin-top: 200px;
+    }
+    .frase > h1{text-shadow: 5px 5px 5px black;}
+    .img-container{
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+    }
+    .imagen{
+        width: 50%;
+        height: 100%;
+        background-image: url("./images/seguridadfisica.JPG");
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .nosotros{
+        width: 50%;
+        height: 100%;
+        padding: 10px 10px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,500px);
+        gap: 15px;
+        padding: 0px 5px;
+    }
+    .container2{
+          display:inline-flex;
+          width: 100vw;
+          height: 50vh;
+          justify-content: center;      
+    }
+    .tildes{
+        
+        width: 45%;
+        height: 100%;
+        justify-content: flex-start;
+    }
+    .tildes > ul{
+        text-align: left;
+        padding: 40px 10px;
+
+    }
+    li{
+        font-size: 1.5em;
+        text-size-adjust: auto;
+        color: var(--ppal);
+        padding-top: 5px;
+    }
+    .redes{
+        justify-content: space-between;
+        border-color: 1px solid antiquewhite;
+        width: 45%;
+        height: 100%;
+    }
+    .redes ul{
+        height: 100%;
+        display: grid;
+        padding: 40px 10px;
+    }
+    footer{
+        width: 100vw;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        background-color: #f1f1ea33;
+    }
+    footer > p{
+        background-color: none;
+    }
+    
+}
