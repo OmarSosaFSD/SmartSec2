@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5c90d9e191.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>SmartSec</title>
 </head>
 <body>
@@ -23,13 +24,13 @@
             </header>
             <div class="frase">
                 <h1>Conectados, cuidandote a todo momento</h1>
-                <button>CONTACTANOS YA!</button>
+                <button><a href="https://api.whatsapp.com/send?phone=5491125153562"><i class="fa-brands fa-whatsapp fa-xl" style="color: #fafafa;"></i> CONTACTANOS YA!</a></button>
             </div>
         </div>
     </section>
     
 
-    <section name="Nosotros">
+    <section id="Nosotros">
             <div class="img-container">
                 <div class="imagen"></div>
                 <div class="nosotros">
@@ -42,7 +43,7 @@
             </div>
     </section>
 
-    <section name="Servicios">
+    <section id="Servicios">
         <div class="titulo-servicios">
             <h2>"Servicio a medida de cada necesidad"</h2>
         </div>
@@ -52,55 +53,55 @@
                 <h3>Camaras de seguridad</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel fugiat molestias obcaecati quaerat, id dolorum mollitia commodi impedit qui ipsa dignissimos nam ducimus possimus expedita repellendus cupiditate quibusdam officiis?
                 </p>
-                <button>+ Info</button>
+                <button class="info" onclick="topFunction()">+ Info</button>
             </div>
             <div class="folleto">
                 <h3>Accesos electronicos</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel fugiat molestias obcaecati quaerat, id dolorum mollitia commodi impedit qui ipsa dignissimos nam ducimus possimus expedita repellendus cupiditate quibusdam officiis?
                 </p>
-                <button>+ Info</button>
+                <button class="info" onclick="topFunction()">+ Info</button>
             </div>
             <div class="folleto">
                 <h3>Cercos electricos</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel fugiat molestias obcaecati quaerat, id dolorum mollitia commodi impedit qui ipsa dignissimos nam ducimus possimus expedita repellendus cupiditate quibusdam officiis?
                 </p>
-                <button>+ Info</button>
+                <button class="info" onclick="topFunction()">+ Info</button>
             </div>
             <div class="folleto">
                 <h3>Alarmas domiciliarias</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel fugiat molestias obcaecati quaerat, id dolorum mollitia commodi impedit qui ipsa dignissimos nam ducimus possimus expedita repellendus cupiditate quibusdam officiis?
                 </p>
-                <button>+ Info</button>
+                <button class="info" onclick="topFunction()">+ Info</button>
             </div>
             <div class="folleto">
                 <h3>Alarmas vecinales</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel fugiat molestias obcaecati quaerat, id dolorum mollitia commodi impedit qui ipsa dignissimos nam ducimus possimus expedita repellendus cupiditate quibusdam officiis?
                 </p>
-                <button>+ Info</button>
+                <button class="info" onclick="topFunction()">+ Info</button>
             </div>
             <div class="folleto">
                 <h3>Alarmas automovil</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel fugiat molestias obcaecati quaerat, id dolorum mollitia commodi impedit qui ipsa dignissimos nam ducimus possimus expedita repellendus cupiditate quibusdam officiis?
                 </p>
-                <button>+ Info</button>
+                <button class="info" onclick="topFunction()">+ Info</button>
             </div>
             <div class="folleto">
                 <h3>Monitoreo 24/7</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel fugiat molestias obcaecati quaerat, id dolorum mollitia commodi impedit qui ipsa dignissimos nam ducimus possimus expedita repellendus cupiditate quibusdam officiis?
                 </p>
-                <button>+ Info</button>
+                <button class="info" onclick="topFunction()">+ Info</button>
             </div>
             <div class="folleto">
                 <h3>Energia solar</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel fugiat molestias obcaecati quaerat, id dolorum mollitia commodi impedit qui ipsa dignissimos nam ducimus possimus expedita repellendus cupiditate quibusdam officiis?
                 </p>
-                <button>+ Info</button>
+                <button class="info" onclick="topFunction()">+ Info</button>
             </div>
             <div class="folleto">
                 <h3>GPS de Flota</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel fugiat molestias obcaecati quaerat, id dolorum mollitia commodi impedit qui ipsa dignissimos nam ducimus possimus expedita repellendus cupiditate quibusdam officiis?
                 </p>
-                <button>+ Info</button>
+                <button class="info" onclick="topFunction()">+ Info</button>
             </div>
         </div>
     </section>
@@ -119,9 +120,9 @@
             </div>
             <div class="redes">
                 <ul>
-                    <li><a href="https://www.facebook.com/SmartSecOK"><i class="fa-brands fa-facebook fa-lg" style="color: #0d5be3;"></i> Facebook</li></a>
-                    <li><a href="https://www.instagram.com/smart_sec_ok/"><i class="fa-brands fa-instagram fa-lg" style="color: #e60fbf;"></i> Instagram</li></a>
-                    <li><a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #32a1f5;"></i> Twitter</li></a>
+                    <li id="face"><a href="https://www.facebook.com/SmartSecOK"><i class="fa-brands fa-facebook fa-lg" style="color: #0d5be3;"></i> Facebook</a></li>
+                    <li id="insta"><a href="https://www.instagram.com/smart_sec_ok/"><i class="fa-brands fa-instagram fa-lg" style="color: #e60fbf;"></i> Instagram</a></li>
+                    <li id="tw"><a href="https:www.twitter.com"><i class="fa-brands fa-twitter fa-lg" style="color: #32a1f5;"></i> Twitter</a></li>
                 </ul>
             </div>
         </div>
@@ -129,7 +130,7 @@
 
     <section>
         <footer>
-            <p>
+            <p class="footer">
                 &copy;SmartSec2023
             </p>
         </footer>
